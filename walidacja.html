@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p>Uczeń:</p><hr>
+    <table>
+        <form name="uczen" method="post">
+            <tr>
+                <td>Imię i nazwisko:</td>
+                <td><input type="text" name="name"></input>*</td>
+            </tr>
+            <tr>
+                <td>email:</td>
+                <td><input type="email" name="email"></input>*</td>
+            </tr>
+            <tr>
+                <td>ocena:</td>
+                <td><input type="number" min="1" max="6" name="rating" required></input>*</td> <!-- min = minimalna liczba / max = maksymalna liczba / required = wymagane -->
+            </tr>
+            <tr>
+                <td>data:</td>
+                <td><input type="date" name="date"></input>*</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="wyślij"></input>
+                    <input type="reset" value="resetuj"></input>
+                </td>
+            </tr>
+    </form>
+    </table><hr>
+    <p>
+        Uwaga!<br>
+        Pole oznaczone * są obowiązkowe!
+    </p>
+</body>
+</html>
